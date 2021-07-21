@@ -1,0 +1,516 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+/*global styling*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+li,
+button,
+label,
+input,
+p,
+a {
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background-color: white;
+  z-index: 3;
+}
+
+.intro button {
+  background: url('../imgs/Party2Asset 12.svg');
+  border: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 40%;
+  margin-left: 2%;
+  filter: drop-shadow(0px 0px 1px #dcdcdc);
+  -webkit-filter: drop-shadow(0px 0px 1px #dfdfdf);
+}
+
+.intro button:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.intro button:active {
+  filter: drop-shadow(0px 0px 0px #f7f7f7);
+  -webkit-filter: drop-shadow(0px 0px 0px #f6f6f6);
+}
+
+.intro .intro-cards {
+  position: relative;
+  top: 10vh;
+  padding-top: 41.8%;
+  height: auto;
+  width: 80%;
+  max-width: 1650px;
+  background-image: url('../imgs/pp-introArtboard 17@300x.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0px 0px 2px #969696);
+  -webkit-filter: drop-shadow(0px 0px 2px #969696);
+}
+
+.intro .intro-cards .intro-phrase h3 {
+  margin-top: -20px;
+  font-size: 2rem;
+  font-weight: 500;
+  position: absolute;
+  top: 82%;
+  right: 15%;
+  color: #d5d5d5;
+}
+
+.pp-intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 15vw;
+  height: 15vw;
+  max-width: 300px;
+  max-height: 300px;
+  min-width: 200px;
+  min-height: 200px;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+}
+
+.pp-intro .box-image {
+  background-image: url('../imgs/pp-introAsset 82.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  filter: drop-shadow(0px 0px 20px #515151);
+  -webkit-filter: drop-shadow(0px 0px 20px #515151);
+}
+
+.pp-intro h2 {
+  color: #e4e4e4;
+  font-size: 1.7em;
+  z-index: 2;
+}
+
+.intro2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background-color: white;
+}
+
+.intro2 button {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  background: url('../imgs/Party2Asset 12.svg');
+  border: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 50%;
+  margin-right: 2%;
+  filter: drop-shadow(0px 0px 1px #dcdcdc);
+  -webkit-filter: drop-shadow(0px 0px 1px #dfdfdf);
+}
+
+.intro2 button:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.intro2 button:active {
+  filter: drop-shadow(0px 0px 0px #f7f7f7);
+  -webkit-filter: drop-shadow(0px 0px 0px #f6f6f6);
+}
+
+.intro2 .intro-cards2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  position: relative;
+  top: 10vh;
+  height: 80%;
+  width: 80%;
+  max-width: 1650px;
+  background-color: white;
+  border: 1px solid #e3e3e3;
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0px 0px 5px #ebebeb);
+  -webkit-filter: drop-shadow(0px 0px 5px #ededed);
+}
+
+.intro2 .intro-cards2 .intro-phrase2 {
+  padding: 1rem 20%;
+  margin-top: -20px;
+  font-size: 3rem;
+  font-weight: 400;
+  position: absolute;
+  color: #262626;
+  text-align: center;
+}
+
+.pp-intro2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 15vw;
+  height: 15vw;
+  max-width: 300px;
+  max-height: 300px;
+  min-width: 200px;
+  min-height: 200px;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+}
+
+.pp-intro2 .box-image2 {
+  background-image: url('../imgs/pp-introAsset 82.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  filter: drop-shadow(0px 0px 20px #515151);
+  -webkit-filter: drop-shadow(0px 0px 20px #515151);
+}
+
+.pp-intro2 h2 {
+  color: #e4e4e4;
+  font-size: 1.7em;
+  z-index: 2;
+}
+
+.tv {
+  height: 100vh;
+  margin-bottom: 10vh;
+}
+
+.tv-intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: inherit;
+  overflow: hidden;
+}
+
+.tv-intro h2 {
+  width: 100vw;
+  font-size: 14vw;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.14);
+  margin-left: 20vw;
+  line-height: 1.1;
+}
+
+.tv-intro .trading {
+  padding-left: 5vw;
+}
+
+.tv-intro .revolution {
+  padding-left: 10vw;
+}
+
+header.main {
+  width: 100%;
+  margin: 0 0 0 auto;
+  padding: 0% 10% 0% 10%;
+  background-color: #d4d4d4;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.14);
+  border-bottom: 1px solid #c6c6c6;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  /* required */
+  z-index: 10;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  min-height: 40px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-weight: 300;
+}
+
+nav h1,
+nav h2,
+nav h3 {
+  font-weight: 300;
+}
+
+nav h1 {
+  font-size: 2rem;
+}
+
+nav h3,
+nav p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+nav .role {
+  text-align: center;
+}
+
+.DL-intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100vh;
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      color-stop(43%, rgba(2, 0, 36, 0)),
+      color-stop(86%, rgba(0, 0, 0, 0.679709))
+    ),
+    url('../imgs/Taronga-Wildlife-Retreat-Cox-Architecture.jpg');
+  background-image: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 0) 43%,
+      rgba(0, 0, 0, 0.679709) 86%
+    ),
+    url('../imgs/Taronga-Wildlife-Retreat-Cox-Architecture.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.DL-intro-phrase {
+  text-align: center;
+  margin: 5%;
+  line-height: 1.4;
+  color: aliceblue;
+}
+
+.DL-intro-phrase h3 {
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+
+.DL-intro-phrase h2 {
+  font-weight: 300;
+  color: #c6c9ce;
+}
+
+.DL-intro-phrase p {
+  font-size: 1.3rem;
+  color: #939eb1;
+}
+
+.DL-intro-phrase .trading {
+  padding-left: 5vw;
+}
+
+.DL-intro-phrase .revolution {
+  padding-left: 10vw;
+}
+
+.piedras-intro {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100vh;
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      color-stop(43%, rgba(2, 0, 36, 0)),
+      color-stop(86%, rgba(0, 0, 0, 0.679709))
+    ),
+    url('../imgs/IMG_3269.jpg');
+  background-image: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 0) 43%,
+      rgba(0, 0, 0, 0.679709) 86%
+    ),
+    url('../imgs/IMG_3269.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.piedras-intro-phrase {
+  text-align: center;
+  margin: 5%;
+  line-height: 1.4;
+  color: aliceblue;
+  font-family: 'Roboto', sans-serif;
+}
+
+.piedras-intro-phrase h3 {
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+
+.piedras-intro-phrase h2 {
+  font-weight: 300;
+  color: #c6c9ce;
+}
+
+.firstslide {
+  position: relative;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+/*# sourceMappingURL=styles.css.map */

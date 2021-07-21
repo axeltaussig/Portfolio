@@ -1,0 +1,25 @@
+.tv {
+  height: 100vh;
+    margin-bottom: 10vh;
+}
+.tv-intro {
+   @include flex(center, center, column);
+  height: inherit;
+  overflow: hidden;
+  h2 {
+    width: 100vw;
+    font-size: 14vw;
+    font-family: 'Inter', sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.14);
+    margin-left: 20vw;
+    line-height: 1.1;
+  }
+  .trading {
+    padding-left: 5vw;
+  }
+  .revolution {
+    padding-left: 10vw;
+  }
+
+}

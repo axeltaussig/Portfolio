@@ -1,0 +1,87 @@
+.intro {
+  @include flex(center, flex-start, row);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  z-index: 3;
+
+  button {
+    background: url('../imgs/Party2Asset\ 12.svg');
+    border: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 40%;
+    margin-left: 2%;
+    filter: drop-shadow(0px 0px 1px #dcdcdc);
+    -webkit-filter: drop-shadow(0px 0px 1px #dfdfdf);
+  }
+
+  button:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  button:active {
+    filter: drop-shadow(0px 0px 0px #f7f7f7);
+    -webkit-filter: drop-shadow(0px 0px 0px #f6f6f6);
+  }
+
+  .intro-cards {
+    position: relative;
+    top: 10vh;
+    padding-top: 41.8%;
+    height: auto;
+    width: 80%;
+    max-width: 1650px;
+    background-image: url('../imgs/pp-introArtboard 17@300x.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 0px 2px #969696);
+    -webkit-filter: drop-shadow(0px 0px 2px #969696);
+
+    .intro-phrase h3 {
+      margin-top: -20px;
+      font-size: 2rem;
+      font-weight: 500;
+      position: absolute;
+      top: 82%;
+      right: 15%;
+      color: #d5d5d5;
+    }
+  }
+}
+
+.pp-intro {
+  @include flex(center, center, row);
+  flex-wrap: wrap;
+  width: 15vw;
+  height: 15vw;
+  max-width: 300px;
+  max-height: 300px;
+  min-width: 200px;
+  min-height: 200px;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+
+  .box-image {
+    background-image: url('../imgs/pp-introAsset 82.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    filter: drop-shadow(0px 0px 20px #515151);
+    -webkit-filter: drop-shadow(0px 0px 20px #515151);
+  }
+
+  h2 {
+    color: rgb(228, 228, 228);
+    font-size: 1.7em;
+    z-index: 2;
+  }
+}

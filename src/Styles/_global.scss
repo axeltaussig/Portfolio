@@ -1,0 +1,40 @@
+/*global styling*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+li,
+button,
+label,
+input,
+p,
+a {
+  font-size: 1.5rem;
+  //font-size: $text;
+}
+
+h1 {
+  //font-size: $header1;
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+  //font-size: $header2;
+}
+h3 {
+  font-size: 2rem;
+  //font-size: $header3;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}

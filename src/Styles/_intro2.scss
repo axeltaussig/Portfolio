@@ -1,0 +1,167 @@
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+@keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+  .firstslide .slideIn {
+    background-color: blue;
+    height: 100vh;
+    animation: fadeIn 4s;
+  }
+  .firstslide .out {
+    background-color: blue;
+    height: 100vh;
+    animation: fade-out 4s;
+  }
+
+
+
+
+.intro2 {
+  @include flex(center, flex-start, row);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+
+  button {
+    transform: rotate(180deg);
+    background: url('../imgs/Party2Asset\ 12.svg');
+    border: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 55%;
+    left: -80px;
+    z-index: 3;
+    margin-right: 2%;
+    filter: drop-shadow(0px 0px 1px #dcdcdc);
+    -webkit-filter: drop-shadow(0px 0px 1px #dfdfdf);
+  }
+
+  button:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  button:active {
+    filter: drop-shadow(0px 0px 0px #f7f7f7);
+    -webkit-filter: drop-shadow(0px 0px 0px #f6f6f6);
+  }
+
+
+  .intro-cards3::after {
+    content: ''; 
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: white;
+    top: 0;
+    right: 0;
+    // transform: rotate(45deg);
+    transform: translate(-50px, -50px)
+  }
+  .intro-cards3 {
+  @include flex(center, center, row);
+    position: relative;
+    top: 10vh;
+    height: 76%;
+    max-height: 800px;
+    max-width: 1650px;
+    width: 80%;
+    background-color: pink;
+
+    /* background-color:transparent;
+    // border: solid 1px #ececec;
+-webkit-box-shadow: 0px 0px 21px -4px rgba(0,0,0,0.58); 
+box-shadow: 0px 0px 21px -4px rgba(0,0,0,0.58);
+  background-image: linear-gradient(black, black), linear-gradient(black, black), linear-gradient(black, black), linear-gradient(black, black), linear-gradient(to bottom left, transparent calc(50% - 1px), black calc(50% - 1px), black calc(50% + 1px), beige calc(50% + 1px)), linear-gradient(beige, beige), linear-gradient(beige, beige);
+  background-size: 2px 100%, 2px 100%, 100% 2px, 100% 2px, 25px 25px, 100% 100%, 100% 100%;
+  background-position: 0% 0%, 100% 25px, -25px 0%, 0px 100%, 100% 0%, -25px 0%, 100% 25px;
+  background-repeat: no-repeat;
+ */
+
+
+    .intro-phrase2 {
+      padding: 1rem 20%;
+      margin-top: -20px;
+      font-size: 3rem;
+      font-weight: 400;
+      position: absolute;
+      color: #262626;
+      text-align: center;
+    }
+  }
+}
+
+  .intro-cards2 {
+    @include flex(center, center, row);
+    position: relative;
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+    // border: 1px solid rgb(227, 227, 227);
+    background-size: contain;
+    background-repeat: no-repeat;
+// -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+// box-shadow: 5px 5px 15px 5px #000000;
+    // filter: drop-shadow(0px 0px 5px #ebebeb);
+    // -webkit-filter: drop-shadow(0px 0px 5px #ededed);
+    //     clip-path: 
+    // polygon(
+    //   0% 25%,     /* top left */
+    //   14% 0%,     /* top left */
+    //   100% 0%,    /* top right */
+    //   100% 0%,   /* top right */
+    //   100% 78%,  /* bottom right */
+    //   86% 100%,  /* bottom right */
+    //   0% 100%,   /* bottom left */
+    //   0 100%      /* bottom left */
+    // );
+    }
+
+.pp-intro2 {
+  @include flex(center, center, row);
+  flex-wrap: wrap;
+  width: 15vw;
+  height: 15vw;
+  max-width: 300px;
+  max-height: 300px;
+  min-width: 200px;
+  min-height: 200px;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+
+  .box-image2 {
+    background-image: url('../imgs/pp-introAsset 82.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    filter: drop-shadow(0px 0px 20px #515151);
+    -webkit-filter: drop-shadow(0px 0px 20px #515151);
+  }
+
+  h2 {
+    color: rgb(228, 228, 228);
+    font-size: 1.7em;
+    z-index: 2;
+  }
+}
+
