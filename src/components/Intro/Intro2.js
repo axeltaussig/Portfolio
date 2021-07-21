@@ -2,11 +2,11 @@ import React, {useContext} from 'react'
 import { sliderData } from './sliderData';
 import AuthContext from './../../store/auth-context'
 
-function Intro2() {
+function Intro2(props) {
   const context = useContext(AuthContext)
   return (
     <>
-       <section class="intro2">
+       <section className={`intro2 ${props.current === 1 ? 'slideIn' : 'slide-out'}`}>
         
        <div class="intro-cards3">
        <button onClick={context.nextSlide}></button>

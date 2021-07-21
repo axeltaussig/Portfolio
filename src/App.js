@@ -15,7 +15,7 @@ function App() {
     <>
       <Header name="Axel" />
       <FirstS slides={sliderData}/>
-      <tvHeader />
+      {/* <tvHeader /> */}
       <Tv />
       <DL />
       <Piedras />

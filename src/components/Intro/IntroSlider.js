@@ -3,6 +3,7 @@ import {sliderData} from './sliderData';
 import Intro from './Intro';
 // import AuthContext from "./../../store/auth-context"
 import AuthContext from "./../../store/auth-context";
+import Intro2 from './Intro2';
 
 
 
@@ -31,12 +32,9 @@ setCurrent(current === length - 1 ? 0 : current + 1)
 <AuthContext.Provider value={{nextSlide}}>
         <React.Fragment >
        <section className='firstslide'>
-       <div
-        className={current === 0 ? 'slideIn active' : 'slide-out active' }
-          style={{ opacity: current === 0 ? 1 : 0 }}>
-          {sliderData[0].card}0
-        </div>
-       <div className={current === 1 ? 'slideIn active' : 'slide-out active'}>{sliderData[1].card}0</div>
+        <Intro current={current} />
+
+        <Intro2 current={current} />
         {/* {sliderData.map((slide, index) => {
           console.log(index)
         return(

@@ -1,4 +1,4 @@
-@keyframes fadeIn {
+@keyframes slideIn {
     from {
       opacity: 0;
     }
@@ -16,9 +16,8 @@
   }
 
   .firstslide .slideIn {
-    background-color: blue;
     height: 100vh;
-    animation: fadeIn 4s;
+    animation: slideIn 4s;
   }
   .firstslide .out {
     background-color: blue;

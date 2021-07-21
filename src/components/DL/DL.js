@@ -3,7 +3,7 @@ import React from 'react'
 function DL() {
     return (
         <>
-    <section class="DL-intro">
+    <section class="DL-intro danyal">
       <div class="DL-intro-phrase">
         <h3>Wild Life Retreat</h3>
         <h2>Rockwork & Aivery</h2>

@@ -4,13 +4,13 @@ import { sliderData } from './sliderData';
 import AuthContext from './../../store/auth-context';
 
 
-function Intro(props) {
+function Intro(p) {
 
 const context = useContext(AuthContext)
 
   return (
     <>
-       <section class="intro">
+       <section className={`intro ${p.current === 0 ? 'slideIn' : 'slide-out'}` } >
        <div class="intro-cards">
       <section class="pp-intro">
       <div class="box-image">
